@@ -66,4 +66,4 @@ If you have any questions about Laraform or interested in contributing, please d
 
 ## License
 
-In order to use Laraform you have to purchase a single developer or organizational license. Please head to our [Pricing](https://laraform.io/pricing) page to find out more about the options.
+Laraform has a non-commercial and a commercial version. Download Laraform for free or purchase a commercial license [here](https://laraform.io/pricing).

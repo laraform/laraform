@@ -1,5 +1,5 @@
 Laraform
 ========
 
-In order to use Laraform you have to purchase a license at: https://laraform.io/pricing.
+In order to use Laraform commercially you have to purchase a license at: https://laraform.io/pricing.
 For more informations regarding the license please read https://laraform.io/terms.
