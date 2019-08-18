@@ -1,6 +1,6 @@
 {
   "name": "laraform",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Laraform Community Edition (Vue.js)",
   "homepage": "https://laraform.io",
   "bugs": {
@@ -17,7 +17,7 @@
     "type" : "git",
     "url" : "https://github.com/laraform/laraform.git"
   },
-  "main": "dist/laraform.min.js",
+  "main": "dist/laraform.js",
   "jest": {
     "moduleFileExtensions": [
       "js",
