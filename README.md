@@ -2,7 +2,7 @@
 
 <a href="https://laraform.io"><img src="assets/logo.svg" style="margin: 20px auto 10px" width="220"></a>
 
-Reactive form builder for Vue.js with Laravel support.
+Reactive form builder for Vue.js with Laravel support
 
 Create even the most complex forms with ease, using two-sided validation, <br> eloquent, nested elements, conditional logic, wizards and many more.
 
@@ -13,7 +13,7 @@ Create even the most complex forms with ease, using two-sided validation, <br> e
 
 # Laraform Community Edition (Vue.js)
 
-Laraform is a premium library aiming to become the world's best form builder tool for web developers. It enchances collaboration by standardizing the creation of forms accross projects and increases efficiency by eliminating a ton of repetitive work. Laraform comes with a lighter "Community Edition" and a full version which can be purchased at our website.
+Laraform is a premium library aiming to become the world's best form builder tool for web developers. It enhances collaboration by standardizing the creation of forms and increases efficiency by eliminating tons of repetitive work. Laraform comes with a lighter "Community Edition" and a full version which can be purchased at our website.
 
 ## Features
 
