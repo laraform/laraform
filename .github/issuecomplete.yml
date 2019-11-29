@@ -1,0 +1,13 @@
+# The name of the label to apply when an issue does not have all tasks checked
+labelName: more information needed
+
+# The text of the comment to add to the issue in addition to the label
+commentText: >
+    Thank you for submitting a ticket. It looks like you haven't filled in the issue template properly and thus we might not be able to help you with this one. Please check out issue templates at https://github.com/laraform/laraform/tree/master/.github/ISSUE_TEMPLATE folder and add what's missing. This is an automated message. 
+# Whether or not to ensure all checkboxes are checked
+checkCheckboxes: true
+
+# Keywords to look for in the body of the issue
+keywords:
+  - Versions
+  - Description
