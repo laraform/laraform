@@ -29,10 +29,13 @@ $lf-input-border: #cccccc !default;
 $lf-input-border-focus: #66afe9 !default;
 $lf-input-border-radius: $lf-border-radius !default;
 $lf-input-height: 36px !default;
+$lf-input-box-shadow: 0px !default;
+$lf-input-focus-box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25) !default;
 
 $lf-button-color: #636b6f !default;
 
 $lf-cursor-disabled: not-allowed !default;
+$lf-enable-shadows: 1 !default;
 
 //== Date, datetime calendar
 //
