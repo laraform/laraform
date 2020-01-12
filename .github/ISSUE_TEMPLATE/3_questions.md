@@ -34,8 +34,8 @@ Put an X between the brackets if you have done the following:
 
 * PHP version: <!-- eg. 7.2.1 -->
 * Laravel version: <!-- eg. 6.2.1 -->
-* Laraform Vue package version: <!-- eg. 1.1.1 (node_modules/@laraform/package.json) -->
-* Laraform Laravel package version: <!-- eg. 1.1.1 (vendor/laraform/laraform-laravel/composer.json) -->
+* Laraform Vue package version and type: <!-- eg. 1.1.1 / pro|community (node_modules/@laraform/package.json) -->
+* Laraform Laravel package version: <!-- eg. 1.1.1 / pro|community (vendor/laraform/laraform-laravel/composer.json) -->
 
 ### Description
 

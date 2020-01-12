@@ -21,7 +21,7 @@ Put an X between the brackets if you have done the following:
 -->
 
 * [ ] Able to reproduce the behaviour outside of your code, the problem is isolated to Laraform.
-* [ ] Provided all the required dependencies to reproduce the bug (eg. form, component, model, migration).
+* [ ] Provided all the required dependencies to reproduce the bug (eg. form, component, model, migration - all with full class).
 * [ ] Your issue isn't already filed.
 * [ ] You filled in the entire issue template.
 
@@ -31,8 +31,8 @@ Put an X between the brackets if you have done the following:
 
 * PHP version: <!-- eg. 7.2.1 -->
 * Laravel version: <!-- eg. 6.2.1 -->
-* Laraform Vue package version: <!-- eg. 1.1.1 (node_modules/@laraform/package.json) -->
-* Laraform Laravel package version: <!-- eg. 1.1.1 (vendor/laraform/laraform-laravel/composer.json) -->
+* Laraform Vue package version and type: <!-- eg. 1.1.1 / pro|community (node_modules/@laraform/package.json) -->
+* Laraform Laravel package version: <!-- eg. 1.1.1 / pro|community (vendor/laraform/laraform-laravel/composer.json) -->
 
 ### Description
 
