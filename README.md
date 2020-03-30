@@ -48,18 +48,23 @@ Laraform aims to support the latest versions of:
 * Apple Safari
 * Microsoft Edge
 * Opera
-* Internet Explorer 10+
 * Safari iOS
 * Chrome, Firefox and Default Browser Android
 
 ## Installation
 
-Laraform is a full-stack library which comes with a separate frontend and backend library.
+Laraform is a full-stack library which comes with a separate frontend and backend library. This will install Laraform's Community Edition. For the full package please [check out our website](https://laraform.io/pricing).
 
 Install frontend library for Vue.js:
 
 ``` bash
 npm i laraform --save
+```
+
+Make sure you have the following peer dependencies installed:
+
+```
+npm i axios lodash moment vue --save
 ```
 
 Install backend library for Laravel:
@@ -68,107 +73,58 @@ Install backend library for Laravel:
 composer require laraform/laraform-laravel
 ```
 
-This will install Laraform's Community Edition. For the full package please [check out our website](https://laraform.io/pricing).
-
-## Usage
-
-Include javascript library:
-``` javascript
-import Vue from 'vue'
-import Laraform from 'laraform'
-
-Vue.use(Laraform)
-
-const app = new Vue({
-  el: '#app'
-})
-```
-
-Import SCSS:
-``` scss
-@import '~laraform/src/themes/bs4/scss/theme.scss';
-```
-
-Create a form:
-
-``` vue
-// MyFirstForm.vue
-
-<script>
-  export default {
-    mixins: [Laraform],
-    data: () => ({
-      schema: {
-        hello_world: {
-          type: 'text',
-          label: 'Hello',
-          default: 'World',
-        }
-      }
-    })
-  }
-</script>
-```
-
-Add as a component and render:
-``` html
-<body>
-  <div id="app">
-    <my-first-form></my-first-form>
-  </div>
-</body>
-```
-
-#### Add Backend Support For Laravel
-
-Publish config:
-
+Publish assets:
 ``` bash
 php artisan vendor:publish
 ```
 
-Choose **`Laraform\LaraformServiceProvider`**
+When asked, choose: `Laraform\LaraformServiceProvider`. This will publish a config file at `config/laraform.php`.
 
-Create a form:
+## Usage
+
+Create a form at `app\Forms\FirstForm.php`:
 
 ``` php
-// app/Forms/MyFirstForm.php
+<?php
 
 namespace App\Forms;
 
-use Laraform;
-
-class MyFirstForm extends Laraform
+class FirstForm extends \Laraform
 {
-  public $schema = [
-    'hello_world' => [
-      'type' => 'text',
-      'label' => 'Hello',
-      'default' => 'World'
-    ]
-  ];
+  public function schema() {
+    return [
+      'hello_world' => [
+        'type' => 'text',
+        'label' => 'Hello',
+        'default' => 'World'
+      ]
+    ];
+  }
 }
 ```
 
-Pass the form to the view:
-``` php
-// routes/web.php
+Pass the form to view in `routes/web.php` using `app()` function:
 
+``` php
 Route::get('/', function () {
   return view('welcome', [
-    'form' => app('App\Forms\MyFirstForm')
+    'form' => app('App\Forms\FirstForm')
   ]);
 });
 ```
 
-Render:
-``` html
-<!-- resources/views/welcome.blade.php --->
+Set up rendering in view in `resources/views/welcome.blade.php`:
 
-<html>
+``` html
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
-    <!-- ... --->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>Laravel</title>
+
     <link rel="stylesheet" type="text/css" href="/css/app.css">
   </head>
   <body>
@@ -181,7 +137,63 @@ Render:
 </html>
 ```
 
-Check out our docs for the full [Installation](https://laraform.io/docs/installation) and [Usage](https://laraform.io/docs/usage) guide.
+Include `Laraform` in `resources/js/app.js`:
+
+``` javascript
+require('./bootstrap');
+
+import Vue from 'vue'
+import Laraform from 'laraform'
+
+Vue.use(Laraform)
+
+const app = new Vue({
+  el: '#app',
+})
+```
+
+Import theme in `resources/sass/app.scss`:
+
+``` scss
+@import 'laraform/src/themes/default/scss/theme.scss';
+```
+
+If you are planning to use a CSS framework, like Bootstrap, make sure you include its theme file **before** Laraform's theme, so that Laraform can make use of the CSS framework's variables.
+
+This is how it should look like in case of Bootstrap 4:
+
+``` scss
+// Bootstrap 4's main theme file
+@import 'bootstrap/scss/bootstrap';
+
+// Laraform's theme file created for Bootstrap 4
+@import 'laraform/src/themes/bs4/scss/theme.scss';
+```
+
+Laraform currently support Bootstrap 3 and Bootstrap 4. If you are using one of those also make sure to change the global `theme` in  `config/laraform.php` to `bs3` or `bs4`:
+
+``` php
+// ...
+'theme' => 'bs4',
+
+// ...
+```
+
+Compile your assets with:
+
+``` bash
+npm run dev
+```
+
+Launch your site for example with:
+
+``` bash
+php artisan serve
+```
+
+Now if you load the site you should see a very simple form with one single input. Check out our [docs](https://laraform.io/docs) to learn how to create more advanced forms.
+
+You can also download [Examples](https://github.com/laraform/examples) to see more forms in action.
 
 ## Documentation
 
