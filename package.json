@@ -1,12 +1,12 @@
 {
     "name": "laraform",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Laraform Community Edition (Vue.js)",
     "homepage": "https://laraform.io",
     "bugs": {
         "url": "https://github.com/laraform/laraform/issues"
     },
-    "license": "MIT",
+    "license": "GPL",
     "authors": [
         {
             "name": "Adam Berecz",
