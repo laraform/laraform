@@ -170,7 +170,7 @@ This is how it should look like in case of Bootstrap 4:
 @import 'laraform/src/themes/bs4/scss/theme.scss';
 ```
 
-Laraform currently support Bootstrap 3 and Bootstrap 4. If you are using one of those also make sure to change the global `theme` in  `config/laraform.php` to `bs3` or `bs4`:
+Laraform currently support Bootstrap 3 and Bootstrap 4. **If you are using one of those also make sure to change the global `theme` in  `config/laraform.php` to `bs3` or `bs4`:**
 
 ``` php
 // ...
@@ -197,7 +197,7 @@ You can also download [Examples](https://github.com/laraform/examples) to see mo
 
 ## Documentation
 
-A complete [Developer Guide](https://laraform.io/docs/rendering) and [API Reference](https://laraform.io/docs/api-laraform) is available at Laraform website.
+A complete [Developer Guide](https://laraform.io/docs/1.x/basics/rendering) and [API Reference](https://laraform.io/docs/1.x/reference/frontend-form) is available at Laraform website.
 
 ## Issue Tracking
 
@@ -209,4 +209,4 @@ If you have any questions about Laraform or interested in contributing, please d
 
 ## License
 
-Laraform Community Edition comes with an MIT license so you are free to use this library in your projects. For the full version check out the licesne at [our website](https://laraform.io/pricing).
+Laraform Community Edition comes with an MIT license so you are free to use this library in your projects. For the full version check out the license at [our website](https://laraform.io/pricing).
