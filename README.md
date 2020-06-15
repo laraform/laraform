@@ -6,7 +6,6 @@ Reactive form builder for Vue.js with Laravel support
 
 Create even the most complex forms with ease, using two-sided validation, <br> eloquent, nested elements, conditional logic, wizards and many more.
 
-
 <a href="https://laraform.io"><img src="screenshots/screencast-1.gif" style="margin: 24px auto 24px" width="540"></a>
 
 </div>
@@ -195,6 +194,33 @@ Now if you load the site you should see a very simple form with one single input
 
 You can also download [Examples](https://github.com/laraform/examples) to see more forms in action.
 
+## Feature Comparison
+
+|  | Full Version | Community Edition |
+| --- | --- | --- |
+| **Backend support** | ✔ | ✔ |
+| **Elements** | all | checkbox, checkbox group, hidden, key, meta, <br>multiselect (native), password, radio, radio group, static, <br>textarea, text  |
+| **File uploads** | ✔ | - |
+| **Nested elements** | ✔ | - |
+| **Custom elements** | ✔ | ✔ |
+| **Translatable elements** | ✔ | - |
+| **Localization** | ✔ | ✔ |
+| **Custom locales** | ✔ | ✔ |
+| **Validation** | ✔ | ✔ |
+| **Validation rules** | all | accepted, alpha, alpha_dash, alpha_num, between,<br> boolean, digits, digits_between, email, filled, in, <br>integer, ip, ipv4, ipv6, json, max, min, not_in, not_regex, <br>numeric, regex, required, size, string, timezone, url, uuid |
+| **Custom rules** | ✔ | ✔ |
+| **Conditions** | ✔ | - |
+| **Tabs** | ✔ | - |
+| **Wizard** | ✔ | - |
+| **Events & hooks** | ✔ | ✔ |
+| **Buttons** | ✔ | ✔ |
+| **Themes** | all | all |
+| **Custom themes** | ✔ | - |
+| **Custom styles** | ✔ | ✔ |
+| **Custom layout** | ✔ | ✔ |
+| **Code splitting** | ✔ | - |
+| | [Get Full version](https://laraform.io/pricing) | [Try out Community Edition](#installation) |
+
 ## Documentation
 
 A complete [Developer Guide](https://laraform.io/docs/1.x/basics/rendering) and [API Reference](https://laraform.io/docs/1.x/reference/frontend-form) is available at Laraform website.
@@ -209,4 +235,4 @@ If you have any questions about Laraform or interested in contributing, please d
 
 ## License
 
-Laraform Community Edition comes with an MIT license so you are free to use this library in your projects. For the full version check out the license at [our website](https://laraform.io/pricing).
+Laraform Community Edition comes with an GPL license so you are free to use this library in your projects. For the full version check out the license at [our website](https://laraform.io/pricing).
