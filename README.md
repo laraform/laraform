@@ -2,7 +2,7 @@
 
 <a href="https://laraform.io"><img src="assets/logo.svg" style="margin: 20px auto 10px" width="220"></a>
 
-Reactive form builder for Vue.js with Laravel support
+Dynamic Form Builder for Laravel with Vue.js
 
 Create even the most complex forms with ease, using two-sided validation, <br> eloquent, nested elements, conditional logic, wizards and many more.
 
