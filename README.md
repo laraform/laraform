@@ -12,7 +12,7 @@ Create even the most complex forms with ease, using two-sided validation, <br> e
 
 # Laraform Community Edition (Vue.js)
 
-Laraform is a premium library aiming to become the world's best form builder tool for web developers. It enhances collaboration by standardizing the creation of forms and increases efficiency by eliminating tons of repetitive work. Laraform comes with a lighter "Community Edition" and a full version which can be purchased at our website.
+Laraform is a premium library aiming to become the world's best form builder tool for web developers. It enhances collaboration by standardizing the creation of forms and increases efficiency by eliminating tons of repetitive work. Laraform comes with a lighter "Community Edition" and a full version which can be purchased at our [website](https://laraform.io/pricing).
 
 ## Features
 
