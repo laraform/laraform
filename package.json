@@ -65,7 +65,7 @@
         "vue-text-mask": "^6.1.2"
     },
     "peerDependencies": {
-        "axios": "^0.19",
+        "axios": "^0.21",
         "lodash": "^4.17.4",
         "moment": "^2.24.0",
         "vue": "^2.5.22"
