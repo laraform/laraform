@@ -7,3 +7,4 @@ out/
 npm-debug.log
 selenium-debug.log
 stats.json
+.npmrc
