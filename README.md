@@ -236,3 +236,7 @@ If you have any questions about Laraform or interested in contributing, please d
 ## License
 
 Laraform Community Edition comes with an GPL license so you are free to use this library in your projects. For the full version check out the license at [our website](https://laraform.io/pricing).
+
+## Vueform
+
+If you are looking for a form builder library that specifically focuses on Vue.js, check out [vueform.com](https://vueform.com).
